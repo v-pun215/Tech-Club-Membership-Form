@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+  <title>Tech Club Membership Form</title>
+</head>
+<body >
+    <center>
+  <form onsubmit="displayInputs(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required>
+    <br>
+
+    <label for="about-yourself">Tell us about yourself:</label>
+    <textarea id="about-yourself" required></textarea>
+    <br>
+
+    <label for="achievements">Achievements? If yes, please describe them:</label>
+    <textarea id="achievements" required></textarea>
+    <br>
+
+    <label for="grade">Grade:</label>
+    <select id="grade">
+      <option value="">Select Grade</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <br>
+
+    <label>Would you like to receive notifications?</label>
+    <input type="radio" id="notifications-yes" name="notifications" value="yes">
+    <label for="notifications-yes">Yes</label>
+    <input type="radio" id="notifications-no" name="notifications" value="no" checked>
+    <label for="notifications-no">No</label>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+    </center>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
